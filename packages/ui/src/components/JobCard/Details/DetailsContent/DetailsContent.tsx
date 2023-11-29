@@ -25,7 +25,7 @@ export const DetailsContent = ({ selectedTab, job, actions }: DetailsContentProp
 
   switch (selectedTab) {
     case 'Screenshot':
-      return <Screenshot url_full={ 'http://www....'}>{ 'img' }</Screenshot>;
+      return <Screenshot url_full={ data?.screenshot?.url }>{ data?.screenshot?.preview }</Screenshot>;
     case 'Data':
       return collapseJobData && !collapseState.data ? (
         <Button onClick={() => setCollapse({ ...collapseState, data: true })}>
