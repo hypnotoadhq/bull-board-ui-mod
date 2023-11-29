@@ -23,6 +23,14 @@ export const DetailsContent = ({ selectedTab, job, actions }: DetailsContentProp
   const { stacktrace, data, returnValue, opts, failedReason } = job;
 
   switch (selectedTab) {
+    case 'Screenshot':
+      return collapseJobData && !collapseState.data ? (
+        <Button onClick={() => setCollapse({ ...collapseState, data: true })}>
+          {t('JOB.SHOW_DATA_BTN')} <ArrowDownIcon />
+        </Button>
+      ) : (
+        <Highlight language="json">Screenshot will be here</Highlight>
+      );
     case 'Data':
       return collapseJobData && !collapseState.data ? (
         <Button onClick={() => setCollapse({ ...collapseState, data: true })}>

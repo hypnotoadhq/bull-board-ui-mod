@@ -38,6 +38,7 @@
       "RETRY": "Retry"
     },
     "TABS": {
+      "SCREENSHOT": "Screenshot",
       "DATA": "Data",
       "OPTIONS": "Options",
       "LOGS": "Logs",
