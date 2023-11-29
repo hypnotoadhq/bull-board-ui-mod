@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { TabsType } from '../../../../hooks/useDetailsTabs';
 import { useSettingsStore } from '../../../../hooks/useSettings';
 import { Highlight } from '../../../Highlight/Highlight';
+import { Screenshot } from '../../../Screenshot/Screenshot';
 import { ArrowDownIcon } from '../../../Icons/ArrowDownIcon';
 import { Button } from '../../../Button/Button';
 import { JobLogs } from './JobLogs/JobLogs';
@@ -24,13 +25,7 @@ export const DetailsContent = ({ selectedTab, job, actions }: DetailsContentProp
 
   switch (selectedTab) {
     case 'Screenshot':
-      return collapseJobData && !collapseState.data ? (
-        <Button onClick={() => setCollapse({ ...collapseState, data: true })}>
-          {t('JOB.SHOW_DATA_BTN')} <ArrowDownIcon />
-        </Button>
-      ) : (
-        <Highlight language="json">Screenshot will be here</Highlight>
-      );
+      return <Screenshot url_full={ 'http://www....'}>{ 'img' }</Screenshot>;
     case 'Data':
       return collapseJobData && !collapseState.data ? (
         <Button onClick={() => setCollapse({ ...collapseState, data: true })}>
