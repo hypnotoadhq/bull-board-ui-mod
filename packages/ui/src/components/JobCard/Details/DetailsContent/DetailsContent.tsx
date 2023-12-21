@@ -23,9 +23,11 @@ export const DetailsContent = ({ selectedTab, job, actions }: DetailsContentProp
   const [collapseState, setCollapse] = useState({ data: false, options: false, error: false });
   const { stacktrace, data, returnValue, opts, failedReason } = job;
 
+  const screenshot: any = typeof job.progress === 'object' ? job.progress : {url: '', preview: ''};
+
   switch (selectedTab) {
     case 'Screenshot':
-      return <Screenshot url_full={ data?.screenshot?.url }>{ data?.screenshot?.preview }</Screenshot>;
+      return <Screenshot url_full={ screenshot?.url }>{ screenshot?.preview }</Screenshot>;
     case 'Data':
       return collapseJobData && !collapseState.data ? (
         <Button onClick={() => setCollapse({ ...collapseState, data: true })}>
