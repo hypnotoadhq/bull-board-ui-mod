@@ -28,8 +28,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@bull-board/api": "file:../api/",
-    "@bull-board/ui": "file:../ui/",
+    "@bull-board/api": "https://gitpkg.now.sh/hypnotoadhq/bull-board-ui-mod/packages/api?master",
+    "@bull-board/ui": "https://gitpkg.now.sh/hypnotoadhq/bull-board-ui-mod/packages/ui?master",
     "@fastify/static": "^6.11.2",
     "@fastify/view": "^8.1.0",
     "ejs": "^3.1.9"
