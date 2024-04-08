@@ -39,7 +39,7 @@
     "supertest": "^6.3.3"
   },
   "peerDependencies": {
-    "@bull-board/ui": "5.10.0"
+    "@bull-board/ui":  "https://gitpkg.now.sh/hypnotoadhq/bull-board-ui-mod/packages/ui?master"
   },
   "publishConfig": {
     "access": "public"

@@ -28,7 +28,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@bull-board/api": "5.10.0"
+    "@bull-board/api": "https://gitpkg.now.sh/hypnotoadhq/bull-board-ui-mod/packages/api?master"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
